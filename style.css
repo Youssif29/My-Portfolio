@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'popins' , sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*header*/
+header{
+    background-color: rgba(240, 248, 255, 0.98);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+    z-index: 999;
+}
+
+
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(85, 82, 255);
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 3em;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(85, 82, 255);
+}
+nav a:hover {
+    color: rgb(119, 76, 212);
+    border-bottom: solid 2px rgb(119, 76, 212);
+}
+
+
+
+/*section of main*/
+.main{
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.280),rgba(255, 255, 255, 0.280)) ,url(me.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1910px;
+    padding-top: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main h2{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+.main h3{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:rgb(85, 82, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main p{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+.main .main-btn{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(85, 82, 255);
+    border: solid 1px rgb(85, 82, 255);
+    border-radius: 11px;
+    margin-bottom: 15px;
+    transition: 0.8s ease;
+}
+
+.main .main-btn:hover{
+    scale: 1.2;
+}
+
+.social1 a{
+    color: white;
+    font-size:25px
+}
+.social1{
+    display: flex;
+    gap: 40px;
+}
+
+.social1 a:hover{
+    color:rgba(255, 255, 255, 0.511)
+}
+
+
+/*section of about*/
+.about-me{
+    background-color: white;
+    color: black;
+    
+}
+.about-me2{
+    margin: 90px;
+}
+
+
+.aboutlogo{
+    display: flex;
+    justify-content: center;
+    color: rgb(85, 82, 255);
+    font-size: 20px;
+    margin-bottom: 3em;
+}
+.mainabt{
+    color: black;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 25px;
+}
+.abt{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin: 30px 300px;
+}
+
+.imgbt{
+    width: 500px;
+    
+}
+.imgabt , .mainabt{
+    width: 45%;
+}
+
+
+
+@media (max-width:1050px){
+    header{
+        padding: 10px 45px;
+    }
+    header .logo{
+        font-size: 20px;
+    }
+    nav a{
+        margin-right: 1.5em;
+        font-size: 15px;
+    }
+    .main{
+        padding-top: 30px;
+        background-size: cover;
+    }
+    .main h2{
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+    
+    
+    .main h3{
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color:rgb(85, 82, 255);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .main p{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    
+    .main .main-btn{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .social1 a{
+        font-size:20px
+    }
+
+    .about-me2{
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .aboutlogo{
+        font-size: 15px;
+    }
+    .mainabt{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .abt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin: 15px 15px;
+    }
+    
+    .imgbt{
+        width: 250px;
+        
+    }
+    .imgabt , .mainabt{
+        width: 100%;
+    }
+
+}
